@@ -1,8 +1,4 @@
 """Pytest port of the VerifyMe API test suite.
-
-Mirrors the original Jest + supertest cases (TC-1 .. TC-5) and runs
-against the live hosted API by default. Override the target with the
-VERIFYME_BASE_URL environment variable.
 """
 
 
