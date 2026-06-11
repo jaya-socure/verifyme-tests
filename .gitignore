@@ -2,3 +2,9 @@ node_modules/
 npm-debug.log*
 .DS_Store
 verifyme-interview/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/

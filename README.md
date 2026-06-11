@@ -3,23 +3,31 @@
 Standalone test suite for the [VerifyMe](https://verify-me-46mk.onrender.com) identity verification API.
 
 The tests run against the live hosted API by default and require no local server.
+The same five cases are available in two flavors: **JavaScript** (Jest + supertest) and **Python** (pytest + requests).
 
-## Setup
+## JavaScript (Jest)
 
 ```bash
 npm install
-```
-
-## Run
-
-```bash
 npm test
 ```
 
-The base URL defaults to `https://verify-me-46mk.onrender.com` and can be overridden:
+## Python (pytest)
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+pytest
+```
+
+## Configuration
+
+The base URL defaults to `https://verify-me-46mk.onrender.com` and can be overridden for either runner:
 
 ```bash
 VERIFYME_BASE_URL=http://localhost:3001 npm test
+VERIFYME_BASE_URL=http://localhost:3001 pytest
 ```
 
 ## Test cases
