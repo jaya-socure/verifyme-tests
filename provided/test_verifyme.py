@@ -69,7 +69,7 @@ def test_tc4_status_endpoint_returns_the_same_decision(post_verify, get_status):
     assert status_res.json()["decision"] == verify_res.json()["decision"]
 
 
-# TC-5: GET /status with nonexistent requestId -> expect 200 (hidden bug: correct is 404)
+# TC-5: GET /status with nonexistent requestId
 def test_tc5_returns_200_for_nonexistent_request_id(get_status):
     res = get_status("nonexistent-id-12345")
     assert res.status_code == 200
