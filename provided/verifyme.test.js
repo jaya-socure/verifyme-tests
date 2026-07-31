@@ -62,7 +62,7 @@ describe("VerifyMe API", () => {
     expect(statusRes.body.decision).toBe(verifyRes.body.decision);
   });
 
-  // TC-5: GET /status with nonexistent requestId → expect 200
+  // TC-5: GET /status with nonexistent requestId
   test("TC-5: returns 200 for nonexistent requestId", async () => {
     const res = await api().get("/status/nonexistent-id-12345");
     expect(res.status).toBe(200);
