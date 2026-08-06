@@ -1,4 +1,10 @@
-node_modules/
-npm-debug.log*
 .DS_Store
-verifyme-interview/
+
+# Maven / Java
+target/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
